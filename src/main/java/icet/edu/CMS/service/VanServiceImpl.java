@@ -33,4 +33,16 @@ public class VanServiceImpl implements VanService{
                 .map(van -> modelMapper.map(van, Van.class))
                 .collect(Collectors.toList());
     }
+
+    public Van getById(Long id){
+
+        return modelMapper.map(vanRepository.findById(id), Van.class);
+    }
+    
+    public List<Van> getHostVans(){
+       List<VanEntity> vanList= vanRepository.findVanEntitiesByHostId("123");
+        return vanList.stream()
+                .map(van->modelMapper.map(van,Van.class))
+                .collect(Collectors.toList());
+    }
 }
