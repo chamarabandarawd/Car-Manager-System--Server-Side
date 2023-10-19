@@ -18,7 +18,7 @@ public class VanEntity {
     private Long id;
     private String name;
     private String price;
-
+    @Column(columnDefinition = "longtext")
     private String description;
     private String imgUrl;
     private String type;
