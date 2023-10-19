@@ -23,4 +23,6 @@ public class VanEntity {
     String price;
     @NotBlank
     String description;
+    @NotBlank
+    String imgUrl;
 }

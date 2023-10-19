@@ -19,4 +19,6 @@ public class Van {
     String price;
     @NotBlank
     String description;
+    @NotBlank
+    String imgUrl;
 }
