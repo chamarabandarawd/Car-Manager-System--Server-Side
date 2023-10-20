@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("vans")
+@CrossOrigin
 public class VanController {
 
     @Autowired
