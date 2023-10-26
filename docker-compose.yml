@@ -1,23 +1,23 @@
-version: '3.9'
-
-services:
-  app:
-    image: chamarabandarawd/cms:2.0.0
-    ports:
-      - 8080:8080
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/cms_v3
-      SPRING_DATASOURCE_username: admin
-      SPRING_DATASOURCE_password: root
-    depends_on:
-      - db
-
-  db:
-    image: mysql:8.0.27
-    environment:
-      DATABASE_HOST: docker-mysql
-      DATABASE_PORT: 3306
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: cms_v3
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: root
+#version: '3.9'
+#
+#services:
+#  app:
+#    image: chamarabandarawd/cms:2.0.0
+#    ports:
+#      - 8080:8080
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/cms_v3
+#      SPRING_DATASOURCE_username: admin
+#      SPRING_DATASOURCE_password: root
+#    depends_on:
+#      - db
+#
+#  db:
+#    image: mysql:8.0.27
+#    environment:
+#      DATABASE_HOST: docker-mysql
+#      DATABASE_PORT: 3306
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: cms_v3
+#      MYSQL_USER: admin
+#      MYSQL_PASSWORD: root
