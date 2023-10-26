@@ -7,9 +7,13 @@ spring:
 #    username : root
 #    password : Cham@wd1
 
-    url: jdbc:mysql://cmsv1.cd5kkcucohud.eu-north-1.rds.amazonaws.com:3306/cmsV1
-    username: admin
-    password: password
+    url: jdbc:mysql://localhost:3306/cms_v3
+    username: root
+    password: Cham@wd1
+
+#    url: jdbc:mysql://cmsv1.cd5kkcucohud.eu-north-1.rds.amazonaws.com:3306/cmsV1
+#    username: admin
+#    password: password
   #  security:
   #    user:
   #      name: root
