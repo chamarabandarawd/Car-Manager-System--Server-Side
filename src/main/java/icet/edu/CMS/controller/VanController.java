@@ -43,7 +43,7 @@ public class VanController {
 
     @GetMapping("test")
     public String testServer(){
-        return "server Running sucufully";
+        return "server Running successfully";
     }
     @PutMapping
     public  void updateVan(@RequestBody Van van){

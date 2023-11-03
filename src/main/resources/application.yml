@@ -1,10 +1,10 @@
-server:
-  ssl:
-      key-alias: spring-https
-      key-store: classpath:codewavelabs.jks
-      key-store-type: JKS
-      key-password: Cham@wd1
-  port: 7777
+#server:
+#  ssl:
+#      key-alias: spring-https
+#      key-store: classpath:codewavelabs.jks
+#      key-store-type: JKS
+#      key-password: Cham@wd1
+#  port: 7777
 
 spring:
   datasource:
